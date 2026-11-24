@@ -1,30 +1,35 @@
-INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+INFO:werkzeug:WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
  * Running on http://127.0.0.1:5000
-INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:Press CTRL+C to quit
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 887-862-305
-INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+WARNING:werkzeug:Debugger PIN: [REDACTED]
+INFO:werkzeug:WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
  * Running on http://127.0.0.1:5000
-INFO:werkzeug:[33mPress CTRL+C to quit[0m
-INFO:werkzeug: * Restarting with stat
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 887-862-305
-INFO:root:PROMPT: You are a helpful support agent. Reply in JSON with reply, action and args.
-Customer name: Ravi Kumar
-Customer email: ravi.kumar@example.com
-Customer phone: +91 98480 12345
-Customer message: Where is my order 10231?
-INFO:root:REPLY to ravi.kumar@example.com: Let me check order 10231.
+INFO:werkzeug:Press CTRL+C to quit
+INFO:root:PROMPT: [REDACTED: customer name, email, phone number and message]
+INFO:root:REPLY: Let me check order [REDACTED].
 INFO:werkzeug:127.0.0.1 - - [24/Nov/2026 09:57:16] "POST /chat HTTP/1.1" 200 -
-INFO:root:PROMPT: You are a helpful support agent. Reply in JSON with reply, action and args.
-Customer name: None
-Customer email: 
-Customer phone: None
-Customer message: 
-INFO:root:REPLY to : Thanks for contacting support. How can I help?
+INFO:root:PROMPT: [REDACTED: customer name, email, phone number and message]
+INFO:root:REPLY: Thanks for contacting support. How can I help?
 INFO:werkzeug:127.0.0.1 - - [24/Nov/2026 09:57:21] "POST /chat HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Nov/2026 09:57:41] "[33mGET / HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [24/Nov/2026 09:57:45] "[33mGET / HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [24/Nov/2026 09:57:49] "[33mGET / HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [24/Nov/2026 09:59:06] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2026 09:57:41] "GET / HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2026 09:57:45] "GET / HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2026 09:57:49] "GET / HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2026 09:59:06] "GET / HTTP/1.1" 404 -
+INFO:root:PROMPT: [REDACTED: customer name, email, phone number and message]
+INFO:root:REPLY: Let me check order [REDACTED].
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2026 10:12:35] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2026 10:15:48] "GET /chat HTTP/1.1" 405 -
+INFO:root:PROMPT: [REDACTED: customer name, email, phone number and message]
+INFO:root:REPLY: Sorry about that. I have issued your refund.
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2026 10:16:52] "POST /chat HTTP/1.1" 200 -
+INFO:root:PROMPT: [REDACTED: customer name, email, phone number and message]
+INFO:root:REPLY: Your account has been closed.
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2026 10:17:36] "POST /chat HTTP/1.1" 200 -
+INFO:root:PROMPT: [REDACTED: customer name, email, phone number and message]
+INFO:root:REPLY: Sorry about that. I have issued your refund.
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2026 10:18:31] "POST /chat HTTP/1.1" 200 -
+INFO:root:PROMPT: [REDACTED: customer name, email, phone number and message]
+INFO:root:REPLY: Thanks for contacting support. How can I help?
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2026 10:19:37] "POST /chat HTTP/1.1" 200 -
