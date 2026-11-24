@@ -1,0 +1,30 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 887-862-305
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 887-862-305
+INFO:root:PROMPT: You are a helpful support agent. Reply in JSON with reply, action and args.
+Customer name: Ravi Kumar
+Customer email: ravi.kumar@example.com
+Customer phone: +91 98480 12345
+Customer message: Where is my order 10231?
+INFO:root:REPLY to ravi.kumar@example.com: Let me check order 10231.
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2026 09:57:16] "POST /chat HTTP/1.1" 200 -
+INFO:root:PROMPT: You are a helpful support agent. Reply in JSON with reply, action and args.
+Customer name: None
+Customer email: 
+Customer phone: None
+Customer message: 
+INFO:root:REPLY to : Thanks for contacting support. How can I help?
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2026 09:57:21] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2026 09:57:41] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2026 09:57:45] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2026 09:57:49] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2026 09:59:06] "[33mGET / HTTP/1.1[0m" 404 -
