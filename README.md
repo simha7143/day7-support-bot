@@ -17,6 +17,13 @@ python -m venv .venv
 .venv\Scripts\activate        (Windows)
 source .venv/bin/activate     (Mac/Linux)
 pip install -r requirements.txt
+```
+
+Refunds are disabled unless an operator token is configured in the server
+environment. In PowerShell, set it before starting the app:
+
+```
+$env:REFUND_AUTH_TOKEN = "your-private-operator-token"
 python app.py
 ```
 
@@ -24,6 +31,12 @@ The app runs at http://127.0.0.1:5000. Send requests with Postman:
 
 - **POST** `http://127.0.0.1:5000/chat`
 - Body (raw, JSON): `{"customer_email": "ravi.kumar@example.com", "message": "Where is my order 10231?"}`
+
+Requests that result in a refund also require an `X-Refund-Authorization`
+header containing the configured operator token. Keep this token on a trusted
+server or operator tool; never expose it to customer-facing clients. Invalid
+assistant actions and refund arguments are rejected. Account closure requires
+a separate follow-up message with the exact text `CONFIRM ACCOUNT CLOSURE`.
 
 ## Run the tests
 

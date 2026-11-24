@@ -8,7 +8,14 @@ import re
 
 
 def call_llm(prompt, api_key):
-    message = prompt.split("Customer message:")[-1].lower()
+    marker = "UNTRUSTED_CUSTOMER_DATA_JSON:\n"
+    if marker not in prompt:
+        raise ValueError("Customer data is missing from the prompt")
+    customer_data = json.loads(prompt.split(marker, 1)[1])
+    if not isinstance(customer_data, dict) or not isinstance(customer_data.get("message"), str):
+        raise ValueError("Customer message must be a string")
+
+    message = customer_data["message"].lower()
     order = re.search(r"order\s*#?(\d{4,})", message)
     order_id = order.group(1) if order else "unknown"
 
